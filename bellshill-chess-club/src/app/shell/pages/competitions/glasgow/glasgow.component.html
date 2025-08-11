@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="inner-container">
+        <div class="banner">
+            <h1 class="banner-title">Glasgow Chess League</h1>
+        </div>
+        <div class="team-list">
+            <button (click)="selectedIndex=1;" [ngClass]="{'selectedButton': selectedIndex === 1}">A Team</button>
+            <button (click)="selectedIndex=2;" [ngClass]="{'selectedButton': selectedIndex === 2}">B Team</button>
+        </div>
+        <div class="team-info">
+            <h2>Team Captain: {{ captain() }}</h2>
+            <h2>E-mail: {{ email() }} </h2>
+            <!-- <a *ngIf="selectedIndex === 1" href="http://www.aekphotography.co.uk/glasgowchess/GCL_Divs/Glasgow_Chess_League_Div_1.html" target="_blank">Open Full Results</a>
+            <a *ngIf="selectedIndex === 2" href="http://www.aekphotography.co.uk/glasgowchess/GCL_Divs/Glasgow_Chess_League_Div_3.html" target="_blank">Open Full Results</a>
+            <div class="results-table">
+                <iframe *ngIf="selectedIndex === 1" scrolling="no" src="http://www.aekphotography.co.uk/glasgowchess/GCL_Divs/Glasgow_Chess_League_Div_1.html" frameborder="0"></iframe>
+                <iframe *ngIf="selectedIndex === 2" scrolling="no" src="http://www.aekphotography.co.uk/glasgowchess/GCL_Divs/Glasgow_Chess_League_Div_3.html" frameborder="0"></iframe>
+            </div> -->
+            <div class="history">
+                <ol *ngIf="selectedIndex === 1" class="history-list">
+                    <a href="https://www.chessscotland.com/grading-results/event2024/GCL_Div_1.html" target="_blank">2024</a>
+                    <a href="https://www.chessscotland.com/grading-results/event2023/Glasgow_Chess_League_Div_2.html" target="_blank">2023</a>
+                    <a href="https://www.chessscotland.com/grading-results/event2020/GCL_Division_1.html" target="_blank">2020</a>
+                    <a href="https://www.chessscotland.com/grading-results/event2019/GCL_Division_1.html" target="_blank">2019</a>
+                    <a href="https://www.chessscotland.com/grading-results/event2018/GCL_Division_1.html" target="_blank">2018</a>
+                    <a href="https://www.chessscotland.com/grading-results/event2017/GCL_Division_2.html" target="_blank">2017</a>
+                </ol>
+                <ol *ngIf="selectedIndex === 2" class="history-list">
+                    <a href="https://www.chessscotland.com/grading-results/event2024/GCL_Div_3.html" target="_blank">2024</a>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>

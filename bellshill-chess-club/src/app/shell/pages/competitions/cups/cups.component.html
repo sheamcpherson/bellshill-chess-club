@@ -1,0 +1,86 @@
+<div class="container">
+    <div class="inner-container">
+        <div class="banner">
+            <h1 class="banner-title">Cups, Tournaments, & Matches</h1>
+        </div>
+        <div class="team-list">
+            <button (click)="selectedIndex=1;" [ngClass]="{'selectedButton': selectedIndex === 1}">2024</button>
+            <button (click)="selectedIndex=2;" [ngClass]="{'selectedButton': selectedIndex === 2}">2023</button>
+            <button (click)="selectedIndex=3;" [ngClass]="{'selectedButton': selectedIndex === 3}">2020</button>
+            <button (click)="selectedIndex=4;" [ngClass]="{'selectedButton': selectedIndex === 4}">2019</button>
+            <button (click)="selectedIndex=5;" [ngClass]="{'selectedButton': selectedIndex === 5}">2018</button>
+        </div>
+        <div class="team-info">
+            <div class="results-table">
+                <ul *ngIf="selectedIndex === 1">
+                    <li>Congratulations to club member Pat O'Hanlon who won the Grand Prix Minor for 2023/24!</li>
+                    <li>Congratulations to club member Pat O'Hanlon who tied for first in the Livingston Allegro Minor!</li>
+                </ul>
+                <ul *ngIf="selectedIndex === 2">
+                    <li>Bellshill defeated Kilmarnock (with help from GM John Shaw) to win the first annual Joe Parks Memorial Match</li>
+                    <li>Congratulations to club member IM Andrew Greet who came clear first in the Glasgow Premier!</li>
+                    <li>Congratulations to club member Shea McPherson who came clear first in the Glasgow Major!</li>
+                    <li>Spens Cup: Bellshill were eliminated 4-1 in the Semi-Final by a strong Bon Accord team, 
+                        but there were good performances across the team that aren't reflected in the score.</li>
+                </ul>
+                <ul *ngIf="selectedIndex === 3">
+                    <li>Spens Cup: Bellshill Chess Club secured a position in the Spens Cup by defeating Edinburgh 
+                        Civil Service in January 2020 1½-3½.  Unfortunately, our next match against Kilmarnock 
+                        was cancelled, along with the event, owing to the Covid-19 pandemic.</li>
+                </ul>
+                <ul *ngIf="selectedIndex === 4">
+                    <li>Scottish Championship: After 9 rounds Ali Roy 4/9 with Stephen McQuillan on 4½/9. 
+                        In the U1850 Joe Parks will be unhappy with his 2/4. Better luck next year Joe. 
+                        The new Scottish Champion is GM Matthew J Turner scoring 7/9.</li>
+                    <li>British Championship Major Open: Ali Roy finished with 5/9 in the Major Open 
+                        of the British Championships 2019.  An interesting win from Ali today. 
+                        Winning as black in 23 moves against RA Barton (1941). Well done Ali. </li>
+                    <li><iframe scrolling="no" src="https://www.chessscotland.com/grading-results/event2019/Lanarkshire_Challenge_Match.html" frameborder="0"></iframe>
+                        <a href="https://www.chessscotland.com/grading-results/event2019/Lanarkshire_Challenge_Match.html" target="_blank">Open Full Results</a>
+                    </li>
+                    <li>Richardson Cup: <div style="display: flex; flex-direction: row;"><img src="assets/images/richardson.png">Result was 6½ to 1½. 
+                        Graeme outplayed their Board 1 and Joe had a comfortable draw on Board 3. 
+                        Young Shea played well and deserved at least a draw - looks like a prospect. 
+                        Daniel played hard to get to the wrong side of a rook and 4 v 3 on the same side. 
+                        Defended well then missed the stalemate defence at the end. 
+                        David and Hamish fought hard but had difficult positions. Pottsy and Gordon 
+                        got mugged. (report from Gordon Scholes)</div></li>
+                </ul>
+                <ul *ngIf="selectedIndex === 5">
+                    <li>Salsburgh Festive Friendly Rapid Play: All players enjoyed rapid play 
+                        chess games in a friendly environment hosted by Salsburgh Chess Club.  
+                        Thanks Salsburgh CC for your hospitality.  I should mention that 
+                        it was reported that a certain Bellshill player dropped off at the board. 
+                        Merry Christmas and a Happy 2019 to all.</li>
+                    <li>Benidorm International Chess Festival: Joe Parks, Hamish Glen, Stephen McQuillan 
+                        and Dick Heathfield, along with a number of other Scots, played in this tournament 
+                        in early December 2018.  Final scores are Stephen(6½/10), Joe(5½/10), 
+                        Dick (4½/10) and Hamish(3½/10).</li>
+                    <li>Oban Chess Congress: This weekend three Bellshill Chess Club members are 
+                        participating in this Congress. Stephen McQuillan in the Open and 
+                        both Hamish Glen (1½/4) and Robin Moore in the Challengers.  Good luck to all. </li>
+                    <li>Friendly vs Salsburgh: A friendly match against Salsburgh Chess Club took place 
+                        in the Layby Public House.  It was noticed by some players that the quality 
+                        of chess played was considerably better at the start of the evening than at 
+                        the end.  The result was 6-1 in Bellshill's favour.  Thanks to Salsburgh 
+                        Chess Club for their hospitality.</li>
+                    <li>Bellshill U1350<iframe id="U1350" scrolling="no" src="https://www.chessscotland.com/grading-results/event2019/Bellshill_Under_1350_Tournament.html" frameborder="0"></iframe>
+                        <a href="https://www.chessscotland.com/grading-results/event2019/Bellshill_Under_1350_Tournament.html" target="_blank">Open Full Results</a>
+                        <br>Congratulations to Wilson Carnie, winner of the Club's U1350 Tournament 2018/19.
+                        <img src="assets/images/U1350.jpg" style="width: 600px; height: 500px;">
+                    </li>
+                    <li>Bellshill Challenge <br><iframe id="CHALLENGE" scrolling="no" src="https://www.chessscotland.com/grading-results/event2019/Bellshill_Challenge.html" frameborder="0"></iframe>
+                        <a href="https://www.chessscotland.com/grading-results/event2019/Bellshill_Challenge.html" target="_blank">Open Full Results</a>
+                    </li>
+                    <li>Bellshill Allegro <br><iframe id="ALLEGRO" scrolling="no" src="https://www.chessscotland.com/grading-results/event2019/Bellshill_Allegro.html" frameborder="0"></iframe>
+                        <a href="https://www.chessscotland.com/grading-results/event2019/Bellshill_Allegro.html" target="_blank">Open Full Results</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="history">
+                <ol class="history-list">
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,138 @@
+:host > div {
+    background-color: #111b42;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-top: 20px;
+}
+
+.navigation-title {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    background: transparent;
+    border: 0px;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.navigation-title:hover {
+    cursor:pointer;
+}
+
+.navigation-list_container {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-list button, .navigation-list > div{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    padding: 10px 0px;
+
+}
+
+.navigation-list button:hover, .navigation-list > div:hover {
+    background-color: white;
+    color: #212121;
+    cursor: pointer;
+}
+
+.navigation-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    border-top: 1px solid white;
+}
+
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+    padding: 0px!important;
+}
+
+.dropdown-container:hover > button {
+    color: #212121!important;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color: white!important;
+    padding: 0px;
+    width: 100%;
+}
+
+.dropdown-button:hover {
+    color: #212121!important;
+}
+
+.dropdown-content-button {
+    color: #212121!important;
+    padding: 0px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: white!important;
+}
+
+.dropdown-content-button:hover {
+    background-color: #212121!important;
+    color: white!important;
+}
+
+.dropdown-container:hover .dropdown-content {
+    display: block;
+}
+
+@media (max-width: 450px) {
+    .navigation {
+        height: 100%;
+    }
+
+    .navigation-title {
+        font-size: 2rem;
+    }
+
+    .navigation-list_container {
+        height: 100%;
+    }
+
+    .navigation-list {
+        padding: 50px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation-list button, .navigation-list > div {
+        font-size: 2.5rem;
+    }
+
+    .closed {
+        height: 80px;
+    }
+
+    .menu-button {
+        height: 40px;
+        width: 40px;
+        background-color: white;
+        border-radius: 50%;
+        padding: 4px;
+    }
+
+    .navigation-heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}

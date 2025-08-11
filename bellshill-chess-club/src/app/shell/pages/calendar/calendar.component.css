@@ -1,0 +1,8 @@
+.calendar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+    background-color: #ffdab9;
+}

@@ -1,0 +1,84 @@
+<div class="about-content">
+    <div class="about-column-content">
+        <div class="about-column">
+            <h1>About</h1>
+            <p>
+                Our club was founded in the 1950s. Our membership 
+                is mostly adult with many years of experience in 
+                the game of chess.  Our club participates in the 
+                Glasgow, Lanarkshire and Dumbartonshire Leagues 
+                and the Spens Cup (national) with a number of 
+                members participating in chess congresses 
+                throughout the country and abroad.
+            </p>
+            <img class="image" src="assets/images/SpensCup.jpg">
+            <p>
+                In 1967, former World Champion Mikhail Moiseyevich 
+                Botvinnik visited Bellshill Chess Club and 
+                played 25 players in a simultaneous exhibition.
+            </p>
+        </div>
+        <div class="about-column details-column">
+            <div class="location">
+                <p>
+                    September - April <br>
+                    Mondays <br>
+                    7.15pm - 10.00pm <br>
+                </p>
+                <p>
+                    Joe McKay Community Centre <br>
+                    Liberty Road <br>
+                    Bellshill <br>
+                    ML4 2EU <br>
+                </p>
+            </div>
+            <iframe *ngIf="!mobile" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8967.308353179033!2d-4.0275071!3d55.8136022!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48886bf4a4f2d063%3A0x7ca3c538c7b3001!2sBellshill%20Chess%20Club!5e0!3m2!1sen!2suk!4v1711916756992!5m2!1sen!2suk" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe *ngIf="mobile" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8967.308353179033!2d-4.0275071!3d55.8136022!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48886bf4a4f2d063%3A0x7ca3c538c7b3001!2sBellshill%20Chess%20Club!5e0!3m2!1sen!2suk!4v1711916756992!5m2!1sen!2suk" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>
+                Email : BellshillChessClub@gmail.com <br>
+            </p>
+            <div style="display: flex; flex-direction: row; align-items: center; width: 100%; justify-content: space-evenly;">
+                <p style="width: 33%;">                Annual Membership Fees :</p>
+                <p style="width: 33%;">                    £40 Adult <br>
+                    £20 Reduced <br>
+                    £10 Junior <br></p>
+            </div>
+        </div>
+    </div>
+    <div class="about-text">
+        <div class="about-text-inner">
+            <div class="about-text-text">
+                <p>
+                    In previous years, we successfully won both 
+                    Glasgow Division 3 and then Division 2.  
+                    In 2017/18, we were promoted to the highly 
+                    competitive Glasgow Division 1 and, although 
+                    the minnows of the Division, we surprised a 
+                    number of top teams and successfully retained 
+                    our place in the top Division for 2018/19. 
+                    After a difficult period in 2018/19 when some 
+                    key players were not available and relegation 
+                    looming we, by the smallest of margins, 
+                    managed to retain our Division 1 position. 
+                </p>
+                <img [ngStyle]="{'margin-left': mobile ? '0px' : '40px'}" class="image" src="assets/images/2Trophies.jpg">
+            </div>
+            <div class="about-text-text">
+                <img [ngStyle]="{'margin-right': mobile ? '0px' : '40px'}" class="image" src="assets/images/JimCummingAward1.jpeg">
+                <p>
+                    In 2018/19, for the first time in the club's 
+                    history, we participated in the Richardson Cup.  
+                    Unfortunately, drawn against a much superior 
+                    team we exited in Round 1. <br><br>
+                    In 2019, club member Jimmy Cumming received a 
+                    much deserved award for his 37 years service to our club.
+                </p>
+            </div>
+            <div class="about-links">
+                <a href="Constitution.pdf" target="_blank">Constitution</a>
+                <button (click)="test()">Privacy Policy</button>
+                <button (click)="test()">Chess Scotland Botvinnik Article</button>
+            </div>
+        </div>
+    </div>
+</div>
