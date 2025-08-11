@@ -1,21 +1,21 @@
 <div class="navigation" [ngClass]="{'closed': !menuOpen}">
     <div *ngIf="mobile" class="navigation-heading">
-        <button routerLink="/home" class="navigation-title">Bellshill Chess Club.</button>
+        <button [routerLink]="'/home'" class="navigation-title">Bellshill Chess Club.</button>
         <img class="menu-button" (click)="menuToggle()" src="assets/images/burger-menu.svg" alt="menu">
     </div>
-    <button *ngIf="!mobile" routerLink="/home" class="navigation-title">Bellshill Chess Club.</button>
+    <button *ngIf="!mobile" [routerLink]="'/home'" class="navigation-title">Bellshill Chess Club.</button>
     <div *ngIf="!mobile || (mobile && menuOpen)" class="navigation-list_container">
         <nav class="navigation-list">
-            <button routerLink="/home" (click)="close()">Home</button>
-            <button routerLink="/about" (click)="close()">About</button>
+            <button [routerLink]="'/home'" (click)="close()">Home</button>
+            <button [routerLink]="'/about'" (click)="close()">About</button>
             <div class="dropdown-container">
                 <button class="dropdown-button">Competitions</button>
                 <div class="dropdown-content">
-                    <button class="dropdown-content-button" routerLink="/competitions/gcl" (click)="close()">Glasgow League</button>
-                    <button class="dropdown-content-button" routerLink="/competitions/lcl" (click)="close()">Lanarkshire League</button>
-                    <button class="dropdown-content-button" routerLink="/competitions/ddca" (click)="close()">Dumbartonshire League</button>
-                    <button class="dropdown-content-button" routerLink="/competitions/cc" (click)="close()">Club Championship</button>
-                    <button class="dropdown-content-button" routerLink="/competitions/cups" (click)="close()">Cups, Tournaments, & Matches</button>
+                    <button class="dropdown-content-button" [routerLink]="'/competitions/gcl'" (click)="close()">Glasgow League</button>
+                    <button class="dropdown-content-button" [routerLink]="'/competitions/lcl'" (click)="close()">Lanarkshire League</button>
+                    <button class="dropdown-content-button" [routerLink]="'/competitions/ddca'" (click)="close()">Dumbartonshire League</button>
+                    <button class="dropdown-content-button" [routerLink]="'/competitions/cc'" (click)="close()">Club Championship</button>
+                    <button class="dropdown-content-button" [routerLink]="'/competitions/cups'" (click)="close()">Cups, Tournaments, & Matches</button>
                 </div>
             </div>
             <button routerLink="/calendar" (click)="close()">Calendar</button>

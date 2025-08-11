@@ -12,8 +12,18 @@ export class AboutComponent {
 
     public mobile = false;
     
-    public test() {
-        window.open("bellshill-cc\\src\\assets\\files\\Constitution.pdf", '_blank');
+    public openFile(index: number) {
+        switch(index) {
+            case 0:
+                window.open("../../../../assets/files/Constitution.pdf", '_blank');
+                break;
+            case 1:
+                window.open("../../../../assets/files/Privacy Policy.pdf", '_blank');
+                break;
+            case 2:
+                window.open("../../../../assets/files/Chess Scotland Article.pdf", '_blank');
+                break;
+        }
     }
 
     ngOnInit() {

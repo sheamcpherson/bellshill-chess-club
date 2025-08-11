@@ -35,7 +35,7 @@
             <iframe *ngIf="!mobile" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8967.308353179033!2d-4.0275071!3d55.8136022!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48886bf4a4f2d063%3A0x7ca3c538c7b3001!2sBellshill%20Chess%20Club!5e0!3m2!1sen!2suk!4v1711916756992!5m2!1sen!2suk" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <iframe *ngIf="mobile" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8967.308353179033!2d-4.0275071!3d55.8136022!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48886bf4a4f2d063%3A0x7ca3c538c7b3001!2sBellshill%20Chess%20Club!5e0!3m2!1sen!2suk!4v1711916756992!5m2!1sen!2suk" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <p>
-                Email : BellshillChessClub@gmail.com <br>
+                Email : BellshillChessClub&#64;gmail.com <br>
             </p>
             <div style="display: flex; flex-direction: row; align-items: center; width: 100%; justify-content: space-evenly;">
                 <p style="width: 33%;">                Annual Membership Fees :</p>
@@ -64,7 +64,7 @@
                 <img [ngStyle]="{'margin-left': mobile ? '0px' : '40px'}" class="image" src="assets/images/2Trophies.jpg">
             </div>
             <div class="about-text-text">
-                <img [ngStyle]="{'margin-right': mobile ? '0px' : '40px'}" class="image" src="assets/images/JimCummingAward1.jpeg">
+                <img [ngStyle]="{'margin-right': mobile ? '0px' : '40px'}" class="image" src="../../../../assets/images/JimCummingAward1.jpeg">
                 <p>
                     In 2018/19, for the first time in the club's 
                     history, we participated in the Richardson Cup.  
@@ -75,9 +75,9 @@
                 </p>
             </div>
             <div class="about-links">
-                <a href="Constitution.pdf" target="_blank">Constitution</a>
-                <button (click)="test()">Privacy Policy</button>
-                <button (click)="test()">Chess Scotland Botvinnik Article</button>
+                <button (click)="openFile(0)">Constitution</button>
+                <button (click)="openFile(1)">Privacy Policy</button>
+                <button (click)="openFile(2)">Chess Scotland Botvinnik Article</button>
             </div>
         </div>
     </div>

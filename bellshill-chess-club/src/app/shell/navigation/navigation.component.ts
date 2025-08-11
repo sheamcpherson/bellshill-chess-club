@@ -1,11 +1,12 @@
 import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
+import { RouterModule, RouterOutlet } from "@angular/router";
 
 @Component({
     selector: 'navigation',
     templateUrl: './navigation.component.html',
     styleUrls: ['./navigation.component.css'],
-    imports: [CommonModule],
+    imports: [CommonModule, RouterModule],
     standalone: true
 })
 export class NavigationComponent {
